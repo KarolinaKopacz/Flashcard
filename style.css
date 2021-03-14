@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 26px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(205, 205, 233);
+}
+
+.createnewquestionform:first-child {
+    margin: 30px 20px;
+    width: 100vw;
+}
+
+.tittle > button {
+    margin: 0 0 5px;
+    width: 100px;
+}
+
+#questioninput,
+#answerinput {
+    min-width: 250px;
+    min-height: 13vh;
+    margin: 5px 5px; 
+    background-color: rgb(244, 244, 247);
+    font-family: arial;
+    font-size: 16px;
+}
+
+#newquestionform {
+    border: 3px solid rgb(235, 156, 169);
+    width: 264px;
+    display: none;
+}
+
+#newquestionform > p {
+    margin: 5px 5px; 
+}
+
+button.addquestion,
+button.save {
+    margin: 20px 0;
+    background-color: rgb(205, 205, 233);
+    width: 110px;
+    height: 40px;
+    border: 2px solid rgb(248, 168, 19);
+    color: rgb(248, 168, 19);
+    font-size: 15px;  
+}
+
+button.save {
+    border: 2px solid rgb(143, 113, 226);
+    color: rgb(143, 113, 226);
+    font-size: 15px;
+    text-align: center;
+    margin: 0 100px 5px;
+    width: 70px;
+}
+
+button.addquestion:hover {
+    background-color: rgb(248, 168, 19);
+    color: white;
+}
+
+button.save:hover {
+    background-color: rgb(143, 113, 226);
+    color: white;
+}
+
+.printanswer {
+    display: none;
+}
+.flashcard.isOpen .printanswer {
+    display: block;
+}
+
+.contener {
+    display: flex;
+}
+
+.flashcard {
+    border: 1px solid rgb(205, 205, 233);
+    background-color: rgb(244, 244, 247);
+    width: 250px;
+    margin: 15px 15px;
+    padding: 10px;
+}
+
+.flashcard > p {
+    min-width: 200px;
+    margin: 5px 5px; 
+    background-color: rgb(244, 244, 247);
+    font-size: 20px;
+}
+
+.flashcard > button {
+    border: 2px solid rgb(143, 113, 226);
+    color: rgb(143, 113, 226);
+    font-size: 15px;
+    text-align: center;;
+    min-width: 50px;
+}
+
+.flashcard > button.showhide {
+    border: none;
+    display: block;
+}
+
+.flashcard > button.showhide:hover {
+    text-decoration: underline;
+}
+
+.flashcard > button.edit:hover,
+.flashcard > button.delete:hover {
+    background-color: rgb(143, 113, 226);
+    color: white;
+}
